@@ -1,7 +1,4 @@
 {
   "git.autofetch": true,
   "editor.tabSize": 2,
-    "files.associations": {
-      "*.jinja": "jinja-html"
-    },
 }
