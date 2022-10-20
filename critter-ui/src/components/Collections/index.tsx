@@ -12,7 +12,7 @@ const Collections = () => (
       <a>
         <img src={fishy} alt="Fish" />
       </a>
-      <h1 class="title">Critters</h1>
+      <h1 class="title">Collections</h1>
       <a>
         <img src={butterfly} alt="Butterfly" />
       </a>

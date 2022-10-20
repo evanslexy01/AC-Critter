@@ -26,7 +26,7 @@ $color-bg-tertiary: #084955;
     margin: 0.5rem 0 1rem 0;
 
     .title {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: 600;
       color: $color-text-primary;
     }
@@ -55,6 +55,7 @@ $color-bg-tertiary: #084955;
       background-color: $color-bg-secondary;
       border-radius: 1rem;
       box-shadow: 5px 5px 4px rgba(0, 240, 255, 0.5);
+      animation: 1.5s cubic-bezier(.05,.18,0,1.05) 1s completed_bubble;
 
       .icon-holder,
       .title,
@@ -81,7 +82,7 @@ $color-bg-tertiary: #084955;
         flex-grow: 4;
         text-align: center;
         color: $color-text-secondary;
-        font-family: 'Kumbh Sans';
+        font-family: 'Noto' 'sans';
         font-weight: 600;
         font-size: 1.5rem;
         line-height: 2.5rem;
@@ -97,16 +98,18 @@ $color-bg-tertiary: #084955;
 
           span {
             color: $color-text-secondary;
-            font-family: 'Kumbh Sans';
+            font-family: 'Noto' 'sans';
           }
 
           .text-top {
+            font-family: 'Noto' 'sans';
             font-weight: 700;
             font-size: 1.1rem;
             line-height: 1.25rem;
           }
 
           .subtitle {
+            font-family: 'Noto' 'sans';
             font-size: 15px; //TODO: fix this
             font-weight: 400;
             line-height: 1.25rem;
@@ -174,5 +177,11 @@ $color-bg-tertiary: #084955;
 
   100% {
     transform: translateX(-50%) translateY(100%) scale(1);
+  }
+}
+
+@keyframes completed_bubble {
+  0% {background-color: #F5F5F5;}
+  100% { background-color: #7D83FF;
   }
 }
