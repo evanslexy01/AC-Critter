@@ -1,18 +1,3 @@
-.home {
-	padding: 56px 20px;
-	min-height: 100%;
-	width: 100%;
-}
-
-body {
-  background-color: #002a32;
-}
-
-h1 {
-  font-style: italic;
-	font-size: large;
-}
-
 .btn {
   width: 3rem;
   height: 3rem;
