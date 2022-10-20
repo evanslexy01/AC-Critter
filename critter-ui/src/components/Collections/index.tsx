@@ -1,39 +1,77 @@
-import "./collections.css";
+import "./collections.scss";
+import fishy from "../../assets/icons/fishy.svg";
+import squid from "../../assets/icons/squid.svg";
+import butterfly from "../../assets/icons/butterfly.svg";
 
-const Fishy = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 31 26">
-    <ellipse
-      fill="#F5F5F5"
-      rx="8.9"
-      ry="6.9"
-      transform="matrix(.92668 -.39333 .49388 .86466 12.7 14.4)"
-    />
-    <ellipse
-      fill="#F5F5F5"
-      rx="2.3"
-      ry="3.9"
-      transform="matrix(-.0525 -.96063 1.03303 .13484 23.8 11.4)"
-    />
-    <ellipse
-      fill="#F5F5F5"
-      rx="2.3"
-      ry="4.3"
-      transform="matrix(.88246 .54134 -.41493 .86265 22.2 9.2)"
-    />
-  </svg>
-);
+const numBugs = 110;
+const totalBugs = 114;
 
 const Collections = () => (
-  <div class="collections">
-    <button class="btn">
-      {/* <button class="btn-muted">{Fishy}</button> */}
-      <button class="btn-muted">
-        <img class="btn_butt" src="butterfly.svg"></img>
-      </button>
-      <button class="btn-muted">
-        <img class="btn_squid" src="squid.svg"></img>
-      </button>
-    </button>
+  // <div>
+  //   <a class="btn-muted">
+  //     <img src={fishy} alt="Fish" />
+  //   </a>
+  //   <a class="btn-muted">
+  //     <img src={squid} alt="Squid" />
+  //   </a>
+  //   <a class="btn-muted">
+  //     <img src={butterfly} alt="Butterfly" />
+  //   </a>
+  // </div>
+  <div class="page">
+    <nav class="header">
+      <a>
+        <img src={fishy} alt="Fish" />
+      </a>
+      <h1 class="title">Critters</h1>
+      <a>
+        <img src={butterfly} alt="Butterfly" />
+      </a>
+    </nav>
+    <div class="content">
+      <div class="bubble">
+        <img class="icon" src={squid} alt="Squid" />
+        <h3 class="title">
+          Bugs: {numBugs}/{totalBugs}
+        </h3>
+      </div>
+      <div class="bubble">
+        <img class="icon" src={squid} alt="Squid" />
+        <h3 class="title">
+          Sea Life: {numBugs}/{totalBugs}
+        </h3>
+      </div>
+      <div class="bubble">
+        <img class="icon" src={squid} alt="Squid" />
+        <h3 class="title">
+          Fish: {numBugs}/{totalBugs}
+        </h3>
+      </div>
+      <div class="bubble">
+        <img class="icon" src={squid} alt="Squid" />
+        <h3 class="title">
+          Fossils: {numBugs}/{totalBugs}
+        </h3>
+      </div>
+      <div class="bubble">
+        <img class="icon" src={squid} alt="Squid" />
+        <h3 class="title">
+          Songs: {numBugs}/{totalBugs}
+        </h3>
+      </div>
+      <div class="bubble">
+        <img class="icon" src={squid} alt="Squid" />
+        <h3 class="title">
+          Art: {numBugs}/{totalBugs}
+        </h3>
+      </div>
+      <div class="bubble">
+        <img class="icon" src={squid} alt="Squid" />
+        <h3 class="title">
+          Gyroids: {numBugs}/{totalBugs}
+        </h3>
+      </div>
+    </div>
   </div>
 );
 

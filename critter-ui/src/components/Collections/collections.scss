@@ -1,0 +1,138 @@
+$color-text-primary: #fff;
+$color-text-secondary: #002a32;
+$color-primary: #fbff22;
+$color-secondary: #7D83FF;
+$color-tertiary: #8E6BD9;
+$color-bg-primary: #002A32;
+$color-bg-secondary: #F5F5F5;
+$color-bg-tertiary: #084955;
+
+.page {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    border-bottom: 2px solid #084955;
+    width: 90%;
+    margin: 0.5rem 0 1rem 0;
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $color-text-primary;
+    }
+
+    .icon {
+      color: $color-text-primary;
+    }
+  }
+
+  .content {
+    width: 100%;
+    height: calc(100% - 8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: clamp(2px, 2.5vh, 3rem);
+
+    .bubble {
+      width: 85%;
+      max-width: 50rem;
+      padding: 1rem;
+      display: flex;
+      color: $color-text-primary;
+      background-color: $color-bg-secondary;
+      border-radius: 1rem;
+      box-shadow: 5px 5px 4px rgba(0, 240, 255, 0.5);
+
+      .icon {
+        height: 100%;
+        width: auto;
+        aspect-ratio: 1/1;
+      }
+
+      .title {
+        color: $color-text-secondary;
+        font-family: 'Kumbh Sans';
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.25rem;
+      }
+
+      .subtitle {
+        color: $color-text-secondary;
+        font-size: 15px; //TODO: fix this
+        line-height: 19px;
+      }
+    }
+
+    .icon {
+      color: $color-text-primary;
+    }
+  }
+}
+
+.btn {
+  width: 3rem;
+  height: 3rem;
+  left: 90%;
+  top: 10%;
+  border-radius: 50%;
+  border: none;
+  background-color: #084955;
+  position: relative;
+}
+
+.btn-muted {
+  border: none;
+  background-color: none;
+}
+
+.btn_fish {
+  left: 40%;
+  top: 40%;
+  width: 50%;
+  height: 50%;
+  z-index: 3;
+  animation: 2s cubic-bezier(0.2, 0.65, 0.32, 0.95) 2s test;
+  border-radius: 25%;
+}
+
+.btn_butt {
+  left: 40%;
+  top: 40%;
+  width: 50%;
+  height: 50%;
+  z-index: 3;
+  animation: 2s cubic-bezier(0.2, 0.65, 0.32, 0.95) 2s test;
+  border-radius: 25%;
+}
+
+.btn_squid {
+  left: 40%;
+  top: 40%;
+  width: 50%;
+  height: 50%;
+  z-index: 3;
+  animation: 2s cubic-bezier(0.2, 0.65, 0.32, 0.95) 2s test;
+  border-radius: 25%;
+}
+
+@keyframes test {
+  0% {
+    transform: translateX(20%) translateY(40%) scale(1);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(100%) scale(1);
+  }
+}
