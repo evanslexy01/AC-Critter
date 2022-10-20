@@ -7,17 +7,6 @@ const numBugs = 110;
 const totalBugs = 114;
 
 const Collections = () => (
-  // <div>
-  //   <a class="btn-muted">
-  //     <img src={fishy} alt="Fish" />
-  //   </a>
-  //   <a class="btn-muted">
-  //     <img src={squid} alt="Squid" />
-  //   </a>
-  //   <a class="btn-muted">
-  //     <img src={butterfly} alt="Butterfly" />
-  //   </a>
-  // </div>
   <div class="page">
     <nav class="header">
       <a>
@@ -30,43 +19,68 @@ const Collections = () => (
     </nav>
     <div class="content">
       <div class="bubble">
-        <img class="icon" src={squid} alt="Squid" />
+        <div class="icon-holder">
+          <img class="icon" src={squid} alt="Squid" />
+        </div>
+        <div class="title-alt-container">
+          <div class="title-alt">
+            <span class="text-top">Giant Snakehead</span>
+            <span class="subtitle">In Rivers Until 11:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="bubble">
+        <div class="icon-holder">
+          <img class="icon" src={squid} alt="Squid" />
+        </div>
         <h3 class="title">
           Bugs: {numBugs}/{totalBugs}
         </h3>
       </div>
       <div class="bubble">
-        <img class="icon" src={squid} alt="Squid" />
+        <div class="icon-holder">
+          <img class="icon" src={squid} alt="Squid" />
+        </div>
         <h3 class="title">
           Sea Life: {numBugs}/{totalBugs}
         </h3>
       </div>
       <div class="bubble">
-        <img class="icon" src={squid} alt="Squid" />
+        <div class="icon-holder">
+          <img class="icon" src={squid} alt="Squid" />
+        </div>
         <h3 class="title">
           Fish: {numBugs}/{totalBugs}
         </h3>
       </div>
       <div class="bubble">
-        <img class="icon" src={squid} alt="Squid" />
+        <div class="icon-holder">
+          <img class="icon" src={squid} alt="Squid" />
+        </div>
         <h3 class="title">
           Fossils: {numBugs}/{totalBugs}
         </h3>
       </div>
       <div class="bubble">
-        <img class="icon" src={squid} alt="Squid" />
+        <div class="icon-holder">
+          <img class="icon" src={squid} alt="Squid" />
+        </div>
         <h3 class="title">
           Songs: {numBugs}/{totalBugs}
         </h3>
       </div>
       <div class="bubble">
-        <img class="icon" src={squid} alt="Squid" />
+        <div class="icon-holder">
+          <img class="icon" src={squid} alt="Squid" />
+        </div>
         <h3 class="title">
           Art: {numBugs}/{totalBugs}
         </h3>
       </div>
       <div class="bubble">
-        <img class="icon" src={squid} alt="Squid" />
+        <div class="icon-holder">
+          <img class="icon" src={squid} alt="Squid" />
+        </div>
         <h3 class="title">
           Gyroids: {numBugs}/{totalBugs}
         </h3>
