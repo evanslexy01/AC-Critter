@@ -1,8 +1,9 @@
-export const enum Type {
-  Fish,
-  SeaCreature,
-  Bug,
-}
+// Frames- for the scanner to use when scanning
+// Critter- all the names enumerated
+// CritterInfo- all their details
+// Groups - Critter sorted into Fish, Bugs, and Sea Creatures
+// Unsure if  groups are needed bc frame operates the same (i.e. fish1+fish2 = entire Fish group)
+
 export const enum Frame {
   fish1,
   fish2,
@@ -4438,3 +4439,7 @@ export const CritterInfo = [
     caught: false,
   },
 ];
+
+//TODO Each group should have a boolean? to either show or hide them from current critters lists
+//TODO Images for all 199 of them agh
+//TODO Have to make them able to switch whether or not they have it, maybe createstores
