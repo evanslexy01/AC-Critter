@@ -6,11 +6,10 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-import { Configuration, IgnorePlugin, container } from 'webpack';
+import { Configuration, IgnorePlugin } from 'webpack';
 import { version as babelVersion } from '@babel/runtime/package.json';
 import { version } from './package.json';
 import * as path from 'path';
-const InterpolateHtmlPlugin = require('interpolate-html-plugin');
 
 // Environment Variables
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
@@ -35,7 +34,7 @@ export default {
   bail: IS_PRODUCTION,
   devtool: IS_PRODUCTION ? false : 'source-map',
   output: {
-    filename: IS_PRODUCTION ? `container-${version}.min.js` : 'container-dev.js',
+    filename: IS_PRODUCTION ? `${version}.min.js` : 'dev.js',
     assetModuleFilename: '[name][ext]',
     pathinfo: IS_DEVELOPMENT,
     publicPath: '',
@@ -197,13 +196,6 @@ export default {
           }
         : false,
     }),
-    new InterpolateHtmlPlugin({
-      NewRelic: process.env.NODE_ENV === 'production' ? 'newRelic.js' : 'newRelic-dev.js',
-      OneTagEnv:
-        process.env.NODE_ENV === 'production'
-          ? "/^https:\\/\\/coaf-container.*..+/.test(window.location.href) ? 'qa' : 'prod'"
-          : '"dev"',
-    }),
     IS_DEVELOPMENT && new CaseSensitivePathsPlugin(),
     IS_PRODUCTION && new MiniCssExtractPlugin(),
     new IgnorePlugin({ resourceRegExp: /^\.\/locale$/, contextRegExp: /moment$/ }),
@@ -229,16 +221,8 @@ export default {
     }),
     IS_PRODUCTION &&
       new CopyPlugin({
-        patterns: [{ from: 'public/{*.ico,*.png,*.css,newRelic.js}', to: '[name][ext]' }],
+        patterns: [{ from: 'public/*.{ico,png,webp,js}', to: '[name][ext]' }],
       }),
-    new container.ModuleFederationPlugin({
-      name: 'container',
-      remotes: {
-        vehicleShare: IS_PRODUCTION
-          ? 'vehicleShare@/vehicle-share/remoteEntry.js'
-          : 'vehicleShare@https://coaf-container-qa.clouddqtext.capitalone.com/vehicle-share/remoteEntry.js',
-      },
-    }),
     USE_ANALYZER && new BundleAnalyzerPlugin(),
   ].filter(Boolean),
 } as Configuration;
