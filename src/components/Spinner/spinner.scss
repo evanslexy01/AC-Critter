@@ -1,0 +1,67 @@
+.ldp-spinner {
+  /* Variables */
+  --circular-loader-fill: #0276b1;
+  --circular-loader-duration: 1.6s;
+
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  svg {
+    height: 44px;
+    width: 44px;
+
+    animation: var(--circular-loader-duration) cubic-bezier(0.3, 0, 0.26, 1) infinite both
+      loader-animation;
+
+    circle {
+      fill: #00000000;
+      stroke-width: 9;
+      transform-origin: center;
+      animation: var(--circular-loader-duration) infinite both loader-circle-animation;
+      stroke: var(--circular-loader-fill);
+      stroke-linecap: round;
+      stroke-dasharray: 300;
+    }
+
+    @media (prefers-reduced-motion) {
+      --circular-loader-duration: 2.4s;
+    }
+  }
+
+  @keyframes loader-animation {
+    5% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(445deg);
+    }
+  }
+
+  @keyframes loader-circle-animation {
+    0% {
+      stroke-dashoffset: 285;
+      transform: rotate(270deg);
+    }
+
+    30% {
+      stroke-dashoffset: 90;
+      transform: rotate(270deg);
+      animation: cubic-bezier(0.88, 0.15, 0.49, 0.83);
+    }
+
+    80%,
+    85% {
+      stroke-dashoffset: 285;
+      transform: rotate(540deg);
+      animation: cubic-bezier(0.17, 0.17, 0.2, 1);
+    }
+
+    85%,
+    100% {
+      stroke-dashoffset: 285;
+      transform: rotate(540deg);
+    }
+  }
+}

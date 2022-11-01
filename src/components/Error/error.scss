@@ -1,0 +1,29 @@
+.ac-error {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  & > img {
+    width: 97px;
+    height: 96px;
+  }
+
+  .msg {
+    padding-top: 1.5rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
+  .detail {
+    max-width: 15rem;
+    padding-top: 1rem;
+    line-height: 1.5rem;
+  }
+}
