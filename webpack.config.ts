@@ -220,9 +220,7 @@ export default {
       issue: { include: [{ file: '../**/src/**/*.tsx?' }] },
     }),
     IS_PRODUCTION &&
-      new CopyPlugin({
-        patterns: [{ from: 'public/*.{ico,png,webp,js}', to: '[name][ext]' }],
-      }),
+      new CopyPlugin({ patterns: [{ from: 'public/*.{ico,png,webp,js}', to: '[name][ext]' }] }),
     USE_ANALYZER && new BundleAnalyzerPlugin(),
   ].filter(Boolean),
 } as Configuration;
