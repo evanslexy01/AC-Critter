@@ -7,7 +7,7 @@
     "build": "cross-env NODE_ENV=production webpack",
     "build:analyze": "cross-env NODE_ENV=production ANALYZE=true webpack",
     "test": "cross-env NODE_ENV=test jest --silent",
-    "lint": "eslint src'",
+    "lint": "eslint src",
     "lint:fix": "eslint --fix src",
     "prettify": "pretty-quick --staged",
     "deploy": "gh-pages -b gh-pages -d dist -m 'deployed with gh-pages'",
