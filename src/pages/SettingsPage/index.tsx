@@ -1,6 +1,5 @@
 import Header from '../../components/Header';
 import home from '../../assets/icons/home.svg';
-import settings from '../../assets/icons/settings.svg';
 import squid from '../../assets/icons/squid.svg';
 import { PAGES } from '../../App';
 import * as React from 'react';

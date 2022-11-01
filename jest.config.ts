@@ -7,7 +7,7 @@ export default {
   rootDir: './',
   roots: ['<rootDir>/src'],
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/**/*.d.ts'],
-  coverageThreshold: { global: { lines: 80 } },
+  // coverageThreshold: { global: { lines: 80 } },
   setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
   transform: {
     '^.+\\.(js|jsx|ts|tsx|css)$': 'babel-jest',
