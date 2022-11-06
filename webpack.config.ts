@@ -1,23 +1,23 @@
-import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
-import CopyPlugin from 'copy-webpack-plugin';
-import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
-import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import TerserPlugin from 'terser-webpack-plugin';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-import { Configuration, IgnorePlugin } from 'webpack';
-import { version as babelVersion } from '@babel/runtime/package.json';
-import { version } from './package.json';
-import * as path from 'path';
+import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin'
+import CopyPlugin from 'copy-webpack-plugin'
+import CssMinimizerPlugin from 'css-minimizer-webpack-plugin'
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import TerserPlugin from 'terser-webpack-plugin'
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
+import { Configuration, IgnorePlugin } from 'webpack'
+import { version as babelVersion } from '@babel/runtime/package.json'
+import { version } from './package.json'
+import * as path from 'path'
 
 // Environment Variables
-const IS_PRODUCTION = process.env.NODE_ENV === 'production';
-const IS_DEVELOPMENT = process.env.NODE_ENV === 'development';
-const USE_ANALYZER = process.env.ANALYZE === 'true';
-const USE_PROFILING = process.env.USE_PROFILING === 'true';
-const REMOVE_CONSOLE = process.env.REMOVE_CONSOLE === 'true';
-const USE_UNSAFE_MINIFICATION = process.env.USE_UNSAFE_MINIFICATION !== 'false';
+const IS_PRODUCTION = process.env.NODE_ENV === 'production'
+const IS_DEVELOPMENT = process.env.NODE_ENV === 'development'
+const USE_ANALYZER = process.env.ANALYZE === 'true'
+const USE_PROFILING = process.env.USE_PROFILING === 'true'
+const REMOVE_CONSOLE = process.env.REMOVE_CONSOLE === 'true'
+const USE_UNSAFE_MINIFICATION = process.env.USE_UNSAFE_MINIFICATION !== 'false'
 
 console.table([
   { option: 'Env', value: IS_PRODUCTION ? 'production' : IS_DEVELOPMENT ? 'development' : 'test' },
@@ -40,7 +40,7 @@ export default {
     publicPath: '',
     devtoolModuleFilenameTemplate: IS_DEVELOPMENT
       ? (info: any) => path.resolve(info.absoluteResourcePath).replace(/\\/g, '/')
-      : undefined,
+      : undefined
   },
   optimization: {
     minimize: IS_PRODUCTION,
@@ -55,15 +55,15 @@ export default {
             passes: 3,
             pure_getters: true,
             unsafe: USE_UNSAFE_MINIFICATION,
-            warnings: false,
+            warnings: false
           },
           format: { comments: false, ecma: 2020, wrap_func_args: false },
           keep_classnames: USE_PROFILING,
-          keep_fnames: USE_PROFILING,
-        },
+          keep_fnames: USE_PROFILING
+        }
       }),
-      new CssMinimizerPlugin(),
-    ],
+      new CssMinimizerPlugin()
+    ]
   },
   module: {
     rules: [
@@ -71,7 +71,7 @@ export default {
         enforce: 'pre',
         exclude: /@babel(?:\/|\\{1,2})runtime/,
         test: /\.(js|mjs|jsx|ts|tsx|css)$/i,
-        loader: 'source-map-loader',
+        loader: 'source-map-loader'
       },
       {
         oneOf: [
@@ -90,25 +90,22 @@ export default {
                     corejs: require('core-js/package.json').version,
                     loose: true,
                     bugfixes: true,
-                    debug: USE_PROFILING, // Shows list of polyfills being added
-                  },
+                    debug: USE_PROFILING // Shows list of polyfills being added
+                  }
                 ],
                 ['@babel/preset-react', { runtime: 'automatic' }],
-                '@babel/preset-typescript',
+                '@babel/preset-typescript'
               ],
               plugins: [
                 ['@babel/plugin-transform-runtime', { version: babelVersion }],
-                IS_PRODUCTION && [
-                  'babel-plugin-transform-react-remove-prop-types',
-                  { removeImport: true },
-                ],
+                IS_PRODUCTION && ['babel-plugin-transform-react-remove-prop-types', { removeImport: true }]
               ].filter(Boolean),
               cacheDirectory: true,
               cacheCompression: false,
               compact: IS_PRODUCTION,
               sourceMaps: IS_DEVELOPMENT,
-              inputSourceMap: IS_DEVELOPMENT,
-            },
+              inputSourceMap: IS_DEVELOPMENT
+            }
           },
           {
             test: /\.css$/i,
@@ -116,7 +113,7 @@ export default {
               IS_DEVELOPMENT ? 'style-loader' : MiniCssExtractPlugin.loader,
               {
                 loader: 'css-loader',
-                options: { sourceMap: IS_DEVELOPMENT, importLoaders: 1, modules: { mode: 'icss' } },
+                options: { sourceMap: IS_DEVELOPMENT, importLoaders: 1, modules: { mode: 'icss' } }
               },
               {
                 loader: 'postcss-loader',
@@ -126,14 +123,14 @@ export default {
                     config: false,
                     plugins: [
                       'postcss-flexbugs-fixes',
-                      ['postcss-preset-env', { autoprefixer: { flexbox: false }, stage: 3 }],
-                    ],
+                      ['postcss-preset-env', { autoprefixer: { flexbox: false }, stage: 3 }]
+                    ]
                   },
-                  sourceMap: IS_DEVELOPMENT,
-                },
-              },
+                  sourceMap: IS_DEVELOPMENT
+                }
+              }
             ],
-            sideEffects: true,
+            sideEffects: true
           },
           {
             test: /\.(scss|sass)$/i,
@@ -141,7 +138,7 @@ export default {
               IS_DEVELOPMENT ? 'style-loader' : MiniCssExtractPlugin.loader,
               {
                 loader: 'css-loader',
-                options: { sourceMap: IS_DEVELOPMENT, importLoaders: 3, modules: { mode: 'icss' } },
+                options: { sourceMap: IS_DEVELOPMENT, importLoaders: 3, modules: { mode: 'icss' } }
               },
               {
                 loader: 'postcss-loader',
@@ -151,32 +148,32 @@ export default {
                     config: false,
                     plugins: [
                       'postcss-flexbugs-fixes',
-                      ['postcss-preset-env', { autoprefixer: { flexbox: false }, stage: 3 }],
-                    ],
+                      ['postcss-preset-env', { autoprefixer: { flexbox: false }, stage: 3 }]
+                    ]
                   },
-                  sourceMap: IS_DEVELOPMENT,
-                },
+                  sourceMap: IS_DEVELOPMENT
+                }
               },
               { loader: 'resolve-url-loader', options: { sourceMap: IS_DEVELOPMENT } },
-              { loader: 'sass-loader', options: { sourceMap: true } },
+              { loader: 'sass-loader', options: { sourceMap: true } }
             ],
-            sideEffects: true,
+            sideEffects: true
           },
           {
             exclude: /(?:^$)|(?:\.(?:js|mjs|jsx|ts|tsx|html|json)$)/i, // Exclude JS, so CSS Loader injects CSS
-            type: 'asset/resource', // ^ Also exclude html & json so they get processed by webpack internal loaders
-          },
-        ],
-      },
-    ].filter(Boolean),
+            type: 'asset/resource' // ^ Also exclude html & json so they get processed by webpack internal loaders
+          }
+        ]
+      }
+    ].filter(Boolean)
   },
   resolve: {
     extensions: ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
     alias: {
       react: 'preact/compat',
       'react-dom': 'preact/compat',
-      'react/jsx-runtime': 'preact/jsx-runtime',
-    }, // secretly swaps react out for preact/compat *shhh*
+      'react/jsx-runtime': 'preact/jsx-runtime'
+    } // secretly swaps react out for preact/compat *shhh*
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -192,9 +189,9 @@ export default {
             useShortDoctype: true,
             minifyJS: true,
             minifyCSS: true,
-            minifyURLs: true,
+            minifyURLs: true
           }
-        : false,
+        : false
     }),
     IS_DEVELOPMENT && new CaseSensitivePathsPlugin(),
     IS_PRODUCTION && new MiniCssExtractPlugin(),
@@ -210,17 +207,16 @@ export default {
             declarationMap: false,
             noEmit: true,
             incremental: true,
-            tsBuildInfoFile: './node_modules/.cache/tsconfig.tsbuildinfo',
-          },
+            tsBuildInfoFile: './node_modules/.cache/tsconfig.tsbuildinfo'
+          }
         },
         context: '.',
         diagnosticOptions: { syntactic: true },
-        mode: 'write-references',
+        mode: 'write-references'
       },
-      issue: { include: [{ file: '../**/src/**/*.tsx?' }] },
+      issue: { include: [{ file: '../**/src/**/*.tsx?' }] }
     }),
-    IS_PRODUCTION &&
-      new CopyPlugin({ patterns: [{ from: 'public/*.{ico,png,webp,js}', to: '[name][ext]' }] }),
-    USE_ANALYZER && new BundleAnalyzerPlugin(),
-  ].filter(Boolean),
-} as Configuration;
+    IS_PRODUCTION && new CopyPlugin({ patterns: [{ from: 'public/*.{ico,png,webp,js}', to: '[name][ext]' }] }),
+    USE_ANALYZER && new BundleAnalyzerPlugin()
+  ].filter(Boolean)
+} as Configuration

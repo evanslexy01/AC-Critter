@@ -1,22 +1,14 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import './header.scss';
+import './header.scss'
 
 type NavBtn = {
-  name: string;
-  icon: string;
-  action: () => void;
-};
+  name: string
+  icon: string
+  action: () => void
+}
 
-export default ({
-  btnLeft,
-  title,
-  btnRight,
-}: {
-  btnLeft?: NavBtn;
-  title: string;
-  btnRight?: NavBtn;
-}) => {
+export default ({ btnLeft, title, btnRight }: { btnLeft?: NavBtn; title: string; btnRight?: NavBtn }) => {
   return (
     <nav className="ac-header">
       {btnLeft !== undefined ? (
@@ -35,5 +27,5 @@ export default ({
         <div />
       )}
     </nav>
-  );
-};
+  )
+}

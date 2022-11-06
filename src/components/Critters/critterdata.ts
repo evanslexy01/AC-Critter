@@ -9,7 +9,7 @@ export const enum Frame {
   fish2,
   bug1,
   bug2,
-  sea,
+  sea
 }
 
 export const enum Critter {
@@ -212,29 +212,29 @@ export const enum Critter {
   SeaPineapple,
   SpottedGardenEel,
   Flatworm,
-  VenusFlowerBasket,
+  VenusFlowerBasket
 }
 
 export interface CritterInfoType {
-  name: string;
-  frame: Frame;
-  gridx: number;
-  gridy: number;
-  location: string;
-  shadow?: number | string;
-  northstart: number;
-  northend: number;
-  secondnorthstart?: number;
-  secondnorthend?: number;
-  southstart: number;
-  southend: number;
-  secondsouthstart?: number;
-  secondsouthend?: number;
-  hourstart: number;
-  hourend: number;
-  secondhourstart?: number;
-  secondhourend?: number;
-  caught?: boolean;
+  name: string
+  frame: Frame
+  gridx: number
+  gridy: number
+  location: string
+  shadow?: number | string
+  northstart: number
+  northend: number
+  secondnorthstart?: number
+  secondnorthend?: number
+  southstart: number
+  southend: number
+  secondsouthstart?: number
+  secondsouthend?: number
+  hourstart: number
+  hourend: number
+  secondhourstart?: number
+  secondhourend?: number
+  caught?: boolean
 }
 
 export const CritterInfo = [
@@ -257,7 +257,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Pale chub',
@@ -278,7 +278,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Crucian carp',
@@ -299,7 +299,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Dace',
@@ -320,7 +320,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Carp',
@@ -341,7 +341,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Koi',
@@ -362,7 +362,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Goldfish',
@@ -383,7 +383,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Pop-eyed goldfish',
@@ -404,7 +404,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Ranchu goldfish',
@@ -425,7 +425,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Killifish',
@@ -446,7 +446,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Crawfish',
@@ -467,7 +467,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Soft-shelled turtle',
@@ -488,7 +488,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Snapping Turtle',
@@ -509,7 +509,7 @@ export const CritterInfo = [
     hourend: 4,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Tadpole',
@@ -530,7 +530,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Frog',
@@ -551,7 +551,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Freshwater goby',
@@ -572,7 +572,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Loach',
@@ -593,7 +593,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Catfish',
@@ -614,7 +614,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Giant snakehead',
@@ -635,7 +635,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Bluegill',
@@ -656,7 +656,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Yellow perch',
@@ -677,7 +677,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Black bass',
@@ -698,7 +698,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Tilapia',
@@ -719,7 +719,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Pike',
@@ -740,7 +740,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Pond smelt',
@@ -761,7 +761,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sweetfish',
@@ -782,7 +782,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Cherry salmon',
@@ -803,7 +803,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Char',
@@ -824,7 +824,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Golden trout',
@@ -845,7 +845,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Stringfish',
@@ -866,7 +866,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Salmon',
@@ -887,7 +887,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'King salmon',
@@ -908,7 +908,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Mitten crab',
@@ -929,7 +929,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Guppy',
@@ -950,7 +950,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Nibble fish',
@@ -971,7 +971,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Angelfish',
@@ -992,7 +992,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Betta',
@@ -1013,7 +1013,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Neon tetra',
@@ -1034,7 +1034,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Rainbowfish',
@@ -1055,7 +1055,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Piranha',
@@ -1076,7 +1076,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: 21,
     secondhourend: 4,
-    caught: false,
+    caught: false
   },
   {
     name: 'Arowana',
@@ -1097,7 +1097,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Dorado',
@@ -1118,7 +1118,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Gar',
@@ -1139,7 +1139,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Arapaima',
@@ -1160,7 +1160,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Saddled bichir',
@@ -1181,7 +1181,7 @@ export const CritterInfo = [
     hourend: 4,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sturgeon',
@@ -1202,7 +1202,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sea butterfly',
@@ -1223,7 +1223,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sea horse',
@@ -1244,7 +1244,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Clown fish',
@@ -1265,7 +1265,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Surgeonfish',
@@ -1286,7 +1286,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Butterfly fish',
@@ -1307,7 +1307,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Napoleonfish',
@@ -1328,7 +1328,7 @@ export const CritterInfo = [
     hourend: 21,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Zebra turkeyfish',
@@ -1349,7 +1349,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Blowfish',
@@ -1370,7 +1370,7 @@ export const CritterInfo = [
     hourend: 4,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Puffer fish',
@@ -1391,7 +1391,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Anchovy',
@@ -1412,7 +1412,7 @@ export const CritterInfo = [
     hourend: 21,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Horse mackerel',
@@ -1433,7 +1433,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Barred knifejaw',
@@ -1454,7 +1454,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sea bass',
@@ -1475,7 +1475,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Red snapper',
@@ -1496,7 +1496,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Dab',
@@ -1517,7 +1517,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Olive flounder',
@@ -1538,7 +1538,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Squid',
@@ -1559,7 +1559,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Moray eel',
@@ -1580,7 +1580,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Ribbon eel',
@@ -1601,7 +1601,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Tuna',
@@ -1622,7 +1622,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Blue marlin',
@@ -1643,7 +1643,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Giant trevally',
@@ -1664,7 +1664,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Mahi-mahi',
@@ -1685,7 +1685,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Ocean sunfish',
@@ -1706,7 +1706,7 @@ export const CritterInfo = [
     hourend: 21,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Ray',
@@ -1727,7 +1727,7 @@ export const CritterInfo = [
     hourend: 21,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Saw shark',
@@ -1748,7 +1748,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Hammerhead shark',
@@ -1769,7 +1769,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Great white shark',
@@ -1790,7 +1790,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Whale shark',
@@ -1811,7 +1811,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Suckerfish',
@@ -1832,7 +1832,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Football fish',
@@ -1853,7 +1853,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Oarfish',
@@ -1874,7 +1874,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Barreleye',
@@ -1895,7 +1895,7 @@ export const CritterInfo = [
     hourend: 4,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Coelacanth',
@@ -1916,7 +1916,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Common Butterfly',
@@ -1937,7 +1937,7 @@ export const CritterInfo = [
     hourend: 19,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Yellow Butterfly',
@@ -1958,7 +1958,7 @@ export const CritterInfo = [
     hourend: 19,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Tiger Butterfly',
@@ -1979,7 +1979,7 @@ export const CritterInfo = [
     hourend: 19,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Peacock Butterfly',
@@ -2000,7 +2000,7 @@ export const CritterInfo = [
     hourend: 19,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Common Bluebottle',
@@ -2021,7 +2021,7 @@ export const CritterInfo = [
     hourend: 19,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Paper Kite Butterfly',
@@ -2042,7 +2042,7 @@ export const CritterInfo = [
     hourend: 19,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Great Purple Emperor',
@@ -2063,7 +2063,7 @@ export const CritterInfo = [
     hourend: 19,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Monarch Butterfly',
@@ -2084,7 +2084,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Emperor Butterfly',
@@ -2105,7 +2105,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Agrias Butterfly',
@@ -2126,7 +2126,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: "Rajah Brooke's Birdwing",
@@ -2147,7 +2147,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: "Queen Alexandra's Birdwing",
@@ -2168,7 +2168,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Moth',
@@ -2189,7 +2189,7 @@ export const CritterInfo = [
     hourend: 4,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Atlas Moth',
@@ -2210,7 +2210,7 @@ export const CritterInfo = [
     hourend: 4,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Madagascan Sunset Moth',
@@ -2231,7 +2231,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Long Locust',
@@ -2252,7 +2252,7 @@ export const CritterInfo = [
     hourend: 19,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Migratory Locust',
@@ -2273,7 +2273,7 @@ export const CritterInfo = [
     hourend: 19,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Rice Grasshopper',
@@ -2294,7 +2294,7 @@ export const CritterInfo = [
     hourend: 19,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Grasshopper',
@@ -2315,7 +2315,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Cricket',
@@ -2336,7 +2336,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Bell Cricket',
@@ -2357,7 +2357,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Mantis',
@@ -2378,7 +2378,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Orchid Mantis',
@@ -2399,7 +2399,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Honeybee',
@@ -2420,7 +2420,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Wasp',
@@ -2441,7 +2441,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Brown Cicada',
@@ -2462,7 +2462,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Robust Cicada',
@@ -2483,7 +2483,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Giant Cicada',
@@ -2504,7 +2504,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Walker Cicada',
@@ -2525,7 +2525,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Evening Cicada',
@@ -2546,7 +2546,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: 16,
     secondhourend: 19,
-    caught: false,
+    caught: false
   },
   {
     name: 'Cicada Shell',
@@ -2567,7 +2567,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Red Dragonfly',
@@ -2588,7 +2588,7 @@ export const CritterInfo = [
     hourend: 19,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Darner Dragonfly',
@@ -2609,7 +2609,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Banded Dragonfly',
@@ -2630,7 +2630,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Damselfly',
@@ -2651,7 +2651,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Firefly',
@@ -2672,7 +2672,7 @@ export const CritterInfo = [
     hourend: 4,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Mole Cricket',
@@ -2693,7 +2693,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Pondskater',
@@ -2714,7 +2714,7 @@ export const CritterInfo = [
     hourend: 19,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Diving Beetle',
@@ -2735,7 +2735,7 @@ export const CritterInfo = [
     hourend: 19,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Giant Water Bug',
@@ -2756,7 +2756,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Stinkbug',
@@ -2777,7 +2777,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Man-Faced Stink Bug',
@@ -2798,7 +2798,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Ladybug',
@@ -2819,7 +2819,7 @@ export const CritterInfo = [
     hourend: 17,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Tiger Beetle',
@@ -2840,7 +2840,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Jewel Beetle',
@@ -2861,7 +2861,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Violin Beetle',
@@ -2882,7 +2882,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Citrus Long-Horned Beetle',
@@ -2903,7 +2903,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Rosalia Batesi Beetle',
@@ -2924,7 +2924,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Blue Weevil Beetle',
@@ -2945,7 +2945,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Dung Beetle',
@@ -2966,7 +2966,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Earth-Boring Dung Beetle',
@@ -2987,7 +2987,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Scarab Beetle',
@@ -3008,7 +3008,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Drone Beetle',
@@ -3029,7 +3029,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Goliath Beetle',
@@ -3050,7 +3050,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Saw Stag',
@@ -3071,7 +3071,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Miyama Stag',
@@ -3092,7 +3092,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Giant Stag',
@@ -3113,7 +3113,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Rainbow Stag',
@@ -3134,7 +3134,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Cyclommatus Stag',
@@ -3155,7 +3155,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Golden Stag',
@@ -3176,7 +3176,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Giraffe Stag',
@@ -3197,7 +3197,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Horned Dynastid',
@@ -3218,7 +3218,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Horned Atlas',
@@ -3239,7 +3239,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Horned Elephant',
@@ -3260,7 +3260,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Horned Hercules',
@@ -3281,7 +3281,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Walking Stick',
@@ -3302,7 +3302,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: 17,
     secondhourend: 19,
-    caught: false,
+    caught: false
   },
   {
     name: 'Walking Leaf',
@@ -3323,7 +3323,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Bagworm',
@@ -3344,7 +3344,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Ant',
@@ -3365,7 +3365,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Hermit Crab',
@@ -3386,7 +3386,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Wharf Roach',
@@ -3407,7 +3407,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Fly',
@@ -3428,7 +3428,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Mosquito',
@@ -3449,7 +3449,7 @@ export const CritterInfo = [
     hourend: 4,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Flea',
@@ -3470,7 +3470,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Snail',
@@ -3491,7 +3491,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Pill Bug',
@@ -3512,7 +3512,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Centipede',
@@ -3533,7 +3533,7 @@ export const CritterInfo = [
     hourend: 23,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Spider',
@@ -3554,7 +3554,7 @@ export const CritterInfo = [
     hourend: 8,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Tarantula',
@@ -3575,7 +3575,7 @@ export const CritterInfo = [
     hourend: 4,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Scorpion',
@@ -3596,7 +3596,7 @@ export const CritterInfo = [
     hourend: 4,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Seaweed',
@@ -3617,7 +3617,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sea Grapes',
@@ -3638,7 +3638,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sea Cucumber',
@@ -3659,7 +3659,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sea Pig',
@@ -3680,7 +3680,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sea Star',
@@ -3701,7 +3701,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sea Urchin',
@@ -3722,7 +3722,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Slate Pencil Urchin',
@@ -3743,7 +3743,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sea Anemone',
@@ -3764,7 +3764,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Moon Jellyfish',
@@ -3785,7 +3785,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sea Slug',
@@ -3806,7 +3806,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Pearl Oyster',
@@ -3827,7 +3827,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Mussel',
@@ -3848,7 +3848,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Oyster',
@@ -3869,7 +3869,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Scallop',
@@ -3890,7 +3890,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Whelk',
@@ -3911,7 +3911,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Turban Shell',
@@ -3932,7 +3932,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Abalone',
@@ -3953,7 +3953,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Gigas Giant Clam',
@@ -3974,7 +3974,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Chambered Nautilus',
@@ -3995,7 +3995,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Octopus',
@@ -4016,7 +4016,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Umbrella Octopus',
@@ -4037,7 +4037,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Vampire Squid',
@@ -4058,7 +4058,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Firefly Squid',
@@ -4079,7 +4079,7 @@ export const CritterInfo = [
     hourend: 4,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Gazami Crab',
@@ -4100,7 +4100,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Dungeness Crab',
@@ -4121,7 +4121,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Snow Crab',
@@ -4142,7 +4142,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Red King Crab',
@@ -4163,7 +4163,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Acorn Barnacle',
@@ -4184,7 +4184,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Spider Crab',
@@ -4205,7 +4205,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Tiger Prawn',
@@ -4226,7 +4226,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sweet Shrimp',
@@ -4247,7 +4247,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Mantis Shrimp',
@@ -4268,7 +4268,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Spiny Lobster',
@@ -4289,7 +4289,7 @@ export const CritterInfo = [
     hourend: 4,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Lobster',
@@ -4310,7 +4310,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Giant Isopod',
@@ -4331,7 +4331,7 @@ export const CritterInfo = [
     hourend: 16,
     secondhourstart: 21,
     secondhourend: 4,
-    caught: false,
+    caught: false
   },
   {
     name: 'Horseshoe Crab',
@@ -4352,7 +4352,7 @@ export const CritterInfo = [
     hourend: 4,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Sea Pineapple',
@@ -4373,7 +4373,7 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Spotted Garden Eel',
@@ -4394,7 +4394,7 @@ export const CritterInfo = [
     hourend: 21,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: 'Flatworm',
@@ -4415,7 +4415,7 @@ export const CritterInfo = [
     hourend: 9,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
+    caught: false
   },
   {
     name: "Venus' Flower Basket",
@@ -4436,9 +4436,9 @@ export const CritterInfo = [
     hourend: 24,
     secondhourstart: null,
     secondhourend: null,
-    caught: false,
-  },
-];
+    caught: false
+  }
+]
 
 //TODO Each group should have a boolean? to either show or hide them from current critters lists
 //TODO Images for all 199 of them agh

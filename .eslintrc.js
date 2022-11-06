@@ -1,7 +1,7 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require('fs')
+const path = require('path')
 
-const prettierOptions = JSON.parse(fs.readFileSync(path.resolve(__dirname, '.prettierrc'), 'utf8'));
+const prettierOptions = JSON.parse(fs.readFileSync(path.resolve(__dirname, '.prettierrc'), 'utf8'))
 
 module.exports = {
   root: true,
@@ -9,13 +9,7 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: { warnOnUnsupportedTypeScriptVersion: true },
-  plugins: [
-    '@typescript-eslint',
-    'sort-imports-es6-autofix',
-    'prettier',
-    'jest',
-    'testing-library',
-  ],
+  plugins: ['@typescript-eslint', 'sort-imports-es6-autofix', 'prettier', 'jest', 'testing-library'],
   env: { browser: true, commonjs: true, es6: true, jest: true, node: true },
   rules: {
     'array-callback-return': 'warn',
@@ -53,10 +47,10 @@ module.exports = {
           ['&', '|', '^', '~', '<<', '>>', '>>>'],
           ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
           ['&&', '||'],
-          ['in', 'instanceof'],
+          ['in', 'instanceof']
         ],
-        allowSamePrecedence: false,
-      },
+        allowSamePrecedence: false
+      }
     ],
     'no-multi-str': 'warn',
     'no-global-assign': 'warn',
@@ -97,7 +91,7 @@ module.exports = {
     'no-restricted-properties': [
       'error',
       { object: 'require', property: 'ensure', message: 'Use import() instead' },
-      { object: 'System', property: 'import', message: 'Use import() instead' },
+      { object: 'System', property: 'import', message: 'Use import() instead' }
     ],
     'getter-return': 'warn',
 
@@ -110,26 +104,26 @@ module.exports = {
     '@typescript-eslint/no-redeclare': 'warn',
     '@typescript-eslint/no-use-before-define': [
       'warn',
-      { functions: false, classes: false, variables: false, typedefs: false },
+      { functions: false, classes: false, variables: false, typedefs: false }
     ],
     '@typescript-eslint/no-unused-expressions': [
       'error',
-      { allowShortCircuit: true, allowTernary: true, allowTaggedTemplates: true },
+      { allowShortCircuit: true, allowTernary: true, allowTaggedTemplates: true }
     ],
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
       'warn',
-      { args: 'none', argsIgnorePattern: '^_', varsIgnorePattern: '^_', ignoreRestSiblings: true },
+      { args: 'none', argsIgnorePattern: '^_', varsIgnorePattern: '^_', ignoreRestSiblings: true }
     ],
     '@typescript-eslint/no-useless-constructor': 'warn',
     '@typescript-eslint/no-var-requires': 'off',
     'sort-imports-es6-autofix/sort-imports-es6': [
       'warn',
-      { memberSyntaxSortOrder: ['none', 'single', 'multiple', 'all'] },
+      { memberSyntaxSortOrder: ['none', 'single', 'multiple', 'all'] }
     ],
     '@typescript-eslint/no-explicit-any': 'off', // Please don't do this though
     '@typescript-eslint/no-non-null-assertion': 'off',
-    'prettier/prettier': ['warn', prettierOptions],
+    'prettier/prettier': ['warn', prettierOptions]
   },
   overrides: [
     {
@@ -163,8 +157,8 @@ module.exports = {
         'testing-library/prefer-presence-queries': 'error',
         'testing-library/prefer-query-by-disappearance': 'error',
         'testing-library/prefer-screen-queries': 'error',
-        'testing-library/render-result-naming-convention': 'error',
-      },
-    },
-  ],
-};
+        'testing-library/render-result-naming-convention': 'error'
+      }
+    }
+  ]
+}

@@ -1,18 +1,18 @@
-import Collections from './pages/CollectionsPage';
-import Critters from './pages/CrittersPage';
-import Settings from './pages/SettingsPage';
-import * as React from 'react';
+import Collections from './pages/CollectionsPage'
+import Critters from './pages/CrittersPage'
+import Settings from './pages/SettingsPage'
+import * as React from 'react'
 
-import './styles/global.scss';
+import './styles/global.scss'
 
 export const enum PAGES {
   Collections,
   Critters,
-  Settings,
+  Settings
 }
 
 export default () => {
-  const [page, setPage] = React.useState(PAGES.Collections); // TODO: Allow page switching
+  const [page, setPage] = React.useState(PAGES.Collections) // TODO: Allow page switching
 
   return (
     <div className="ac-root">
@@ -20,5 +20,5 @@ export default () => {
       <Critters page={page} setPage={setPage} />
       <Settings page={page} setPage={setPage} />
     </div>
-  );
-};
+  )
+}

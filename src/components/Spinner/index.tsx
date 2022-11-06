@@ -1,6 +1,6 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import './spinner.scss';
+import './spinner.scss'
 
 export default () => (
   <div className="ldp-spinner">
@@ -8,4 +8,4 @@ export default () => (
       <circle cx="50" cy="50" r="45" />
     </svg>
   </div>
-);
+)

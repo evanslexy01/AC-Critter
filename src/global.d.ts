@@ -1,23 +1,23 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 namespace NodeJS {
   interface ProcessEnv {
-    NODE_ENV: 'development' | 'production' | 'test';
-    USE_ANALYZER: boolean; // Building for Bundle Analyzer
-    USE_PROFILING: boolean; // Building with Code Profiling
-    REMOVE_CONSOLE: boolean; // Excluding console.* statements
-    USE_UNSAFE_MINIFICATION: boolean; // Building with unsafe minification
+    NODE_ENV: 'development' | 'production' | 'test'
+    USE_ANALYZER: boolean // Building for Bundle Analyzer
+    USE_PROFILING: boolean // Building with Code Profiling
+    REMOVE_CONSOLE: boolean // Excluding console.* statements
+    USE_UNSAFE_MINIFICATION: boolean // Building with unsafe minification
   }
 }
 
 // Global Types
-type LID = `${string}-${string}-${string}-${string}-${string}`;
+type LID = `${string}-${string}-${string}-${string}-${string}`
 
 type CustomerData = {
-  firstName?: string;
-  lastName?: string;
-  email?: string;
-  phoneNumber?: string;
-};
+  firstName?: string
+  lastName?: string
+  email?: string
+  phoneNumber?: string
+}
 
 // Prequal Component Type
 type PrequalForm<T> = React.DOMAttributes<T> & {
@@ -39,73 +39,73 @@ type PrequalForm<T> = React.DOMAttributes<T> & {
 }; /* prettier-ignore */
 
 // Vehicle Share Types
-declare module 'vehicleShare/VehicleShareApp';
+declare module 'vehicleShare/VehicleShareApp'
 type VehicleShare<T> = React.DOMAttributes<T> & {
-  lid: LID;
-  isLocal?: boolean;
-};
+  lid: LID
+  isLocal?: boolean
+}
 
 // Declare WebComponents <vehicle-share> & <c1-auto-prequal-form>
 /* eslint-disable @typescript-eslint/no-unused-vars */
 namespace JSX {
   interface IntrinsicElements {
-    ['c1-auto-prequal-form']: PrequalForm<HTMLElement>;
-    ['vehicle-share']: VehicleShare<HTMLElement>;
+    ['c1-auto-prequal-form']: PrequalForm<HTMLElement>
+    ['vehicle-share']: VehicleShare<HTMLElement>
   }
 }
 
 // File Extension Types for Imports
 declare module '*.css' {
-  const styles: { [className: string]: string };
-  export default styles;
+  const styles: { [className: string]: string }
+  export default styles
 }
 
 declare module '*.scss' {
-  const styles: { [className: string]: string };
-  export default styles;
+  const styles: { [className: string]: string }
+  export default styles
 }
 
 declare module '*.sass' {
-  const styles: { [className: string]: string };
-  export default styles;
+  const styles: { [className: string]: string }
+  export default styles
 }
 
 declare module '*.avif' {
-  const src: string;
-  export default src;
+  const src: string
+  export default src
 }
 
 declare module '*.bmp' {
-  const src: string;
-  export default src;
+  const src: string
+  export default src
 }
 
 declare module '*.gif' {
-  const src: string;
-  export default src;
+  const src: string
+  export default src
 }
 
 declare module '*.jpg' {
-  const src: string;
-  export default src;
+  const src: string
+  export default src
 }
 
 declare module '*.jpeg' {
-  const src: string;
-  export default src;
+  const src: string
+  export default src
 }
 
 declare module '*.png' {
-  const src: string;
-  export default src;
+  const src: string
+  export default src
 }
 
 declare module '*.webp' {
-  const src: string;
-  export default src;
+  const src: string
+  export default src
 }
 
 declare module '*.svg' {
-  const src: string;
-  export default src;
+  const src: string
+  export default src
 }

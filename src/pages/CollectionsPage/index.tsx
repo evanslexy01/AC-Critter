@@ -1,21 +1,19 @@
-import Header from '../../components/Header';
-import butterfly from '../../assets/icons/butterfly.svg';
-import fish from '../../assets/icons/fishy.svg';
-import net from '../../assets/icons/net.svg';
-import settings from '../../assets/icons/settings.svg';
-import squid from '../../assets/icons/squid.svg';
-import { PAGES } from '../../App';
+import Header from '../../components/Header'
+import butterfly from '../../assets/icons/butterfly.svg'
+import fish from '../../assets/icons/fishy.svg'
+import net from '../../assets/icons/net.svg'
+import settings from '../../assets/icons/settings.svg'
+import squid from '../../assets/icons/squid.svg'
+import { PAGES } from '../../App'
 
-import * as React from 'react';
+import * as React from 'react'
 
-const numBugs = 110;
-const totalBugs = 114;
+const numBugs = 110
+const totalBugs = 114
 
 export default ({ page, setPage }: { page: PAGES; setPage: (page: PAGES) => void }) => (
   <div
-    className={`page${
-      page === PAGES.Collections ? '' : ` page-hide-${page === PAGES.Settings ? 'right' : 'left'}`
-    }`}
+    className={`page${page === PAGES.Collections ? '' : ` page-hide-${page === PAGES.Settings ? 'right' : 'left'}`}`}
   >
     <Header
       btnLeft={{ name: 'settings', icon: settings, action: () => setPage(PAGES.Settings) }}
@@ -81,4 +79,4 @@ export default ({ page, setPage }: { page: PAGES; setPage: (page: PAGES) => void
       </div>
     </div>
   </div>
-);
+)
