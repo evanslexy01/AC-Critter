@@ -15,10 +15,10 @@ export default () => {
   const [page, setPage] = React.useState(PAGES.Collections) // TODO: Allow page switching
 
   return (
-    <div className="ac-root">
+    <>
       <Collections page={page} setPage={setPage} />
       <Critters page={page} setPage={setPage} />
       <Settings page={page} setPage={setPage} />
-    </div>
+    </>
   )
 }
